@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>McMonagle Art</title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<!-- Custom CSS -->
+	<style>
+		body {
+			padding: 20px;
+			background-color: antiquewhite;
+
+		}
+		
+		select {
+			width: 15%;
+			padding: 10px;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			
+		}
+
+		h1 {
+			margin-bottom: 20px;
+		}
+
+		h2{
+		margin: auto;
+		text-align: center;
+		width: 1050; 
+		height: 50px; 
+		background: rgb(168, 172, 173);  
+		margin-bottom: 20px;
+		}
+
+		footer{
+		margin: auto;
+		text-align: center;
+		width: 1050; 
+		height: 50px; 
+		background: rgb(168, 172, 173); 
+		margin-bottom: 20px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Art Store</h1>
+		<h2> Edit Art Work Details </h2>
+		<form action="McMonagle_result.php" method="get">
+			<div class ="row">
+					<label for="title">Title</label>
+				</div>
+				<div class="row">
+					<input type="text" name="title"
+                                          size="150" required>
+				</div>
+			<div class ="row">
+				<label for="title">Description</label>
+			</div>
+			<div class="row">
+				<input type="text" name="description"
+									  size="150" required>
+			</div>
+			<div class="row">
+					<label for="genre">Genre</label>
+					</div>
+					<div class="row">
+					<select name="genre" id="genre">
+					</select>
+				</div>
+				<div class="row">
+					<label for="subject">Subject</label>
+					</div>
+					<div class="row">
+					<select name="subject" id="subject">
+					</select>
+				</div>
+				<div class ="row">
+					<label for="title">Medium</label>
+				</div>
+				<div class="row">
+					<input type="text" name="medium"
+                                          size="75" required>
+			</div>
+				<div class="row">
+					<label for="year">Year</label>
+				</div>
+				<div class="row">
+					<select name="year" id="year">
+					</select>
+				</div>
+				<div class ="row">
+					<label for="title">Museum</label>
+					</div>
+					<div class="row">
+					<input type="text" name="museum"
+                                          size="75" required>
+			</div>
+			<br>
+			<div>
+				<input type="checkbox" name="new" class="checkoption" value="New"> New <br>
+   				<input type="checkbox" name="old" class="checkoption" value="Old"> Old
+			  </div>
+			  <br>
+			  <footer>
+				<button type="submit" name = "submit" class="btn btn-primary">Submit</button>
+				<button type="reset" name = "reset" class="btn btn-primary">Clear Form</button>
+			</footer>
+			
+		</form>
+	</div>
+	<!-- Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<!-- Custom JS -->
+	<script src="app.js"></script>
+</body>
+</html>
